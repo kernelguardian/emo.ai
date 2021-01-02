@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* img {
+        max-width: 100%;
+        max-height: 100%;
+        display: block; /* remove extra space below image */
+      /* } */
+
+      .boxsmall {
+        height: 350px;
+      }
+    </style>
+    <title>Emo.ai</title>
+  </head>
+  <body>
+    <div class="container">
+      <br />
+
+      <div class="jumbotron">
+        <h1 class="display-1"><b>Emo.ai Report Summary</b></h1>
+        <p class="lead">
+          Dear {{username}},<br />Thank you for taking our test. By analyzing
+          your facial expressions and your response to our survey, we found your
+          most dominant emotion as <b> {{emotion}}</b>. {{message}} <br />Your
+          friend's at Emo.ai
+        </p>
+        <hr class="my-4" />
+        <p class="display-2"><b>Detailed Report</b></p>
+      </div>
+
+      <div class="container">
+        <p>*Neutral emotion will not be considered as dominant emotion</p>
+        <img src="emograph.png" alt="Emotion Pie Chart" />
+      </div>
+      <br />
+
+      <div class="container">
+        <p class="display-3"><b>Survey Results</b></p>
+
+        <ol class="list-group" type="1">
+          <li class="list-group-item">
+            <h5 class="mb-1">
+              <p>1. How often do you communicate with people close to you?</p>
+            </h5>
+            Response : {{q2}}
+          </li>
+          <br />
+
+          <li class="list-group-item">
+            <h5 class="mb-1">
+              <p>2. Has there been any change in your appetite?</p>
+            </h5>
+            Response : {{q3}}
+          </li>
+          <br />
+
+          <li class="list-group-item">
+            <h5 class="mb-1">
+              <p>
+                3. Are you able to find time for yourself and engage in
+                activities you like?
+              </p>
+            </h5>
+            Response : {{q4}}
+          </li>
+          <br />
+
+          <li class="list-group-item">
+            <h5 class="mb-1">
+              <p>4. Do you consider yourself as a happy person?</p>
+            </h5>
+            Response : {{q5}}
+          </li>
+          <br />
+
+          <li class="list-group-item">
+            <h5 class="mb-1">
+              <p>5. Does the thought of tomorrow make you worry?</p>
+            </h5>
+            Response : {{q6}}
+          </li>
+          <br />
+
+          <li class="list-group-item">
+            <h5 class="mb-1">
+              <p>6. Are you having trouble with concentrating in your work?</p>
+            </h5>
+            Response : {{q7}}
+          </li>
+          <br />
+
+          <li class="list-group-item">
+            <h5 class="mb-1">
+              <p>
+                7. How often have you felt difficulties were piling up so high
+                that you could not overcome them?
+              </p>
+            </h5>
+            Response : {{q8}}
+          </li>
+          <br />
+
+          <li class="list-group-item">
+            <h5 class="mb-1">
+              <p>
+                8. How would you describe yourself? Be as detailed as you can
+              </p>
+            </h5>
+            Response : {{q9}}
+          </li>
+          <br />
+
+          <li class="list-group-item">
+            <h5 class="mb-1">
+              <p>
+                9. Has there been any incident that occurred and later you felt
+                you should have acted differently?
+              </p>
+            </h5>
+            Response : {{q10}}
+          </li>
+          <br />
+          <li class="list-group-item">
+            <h5 class="mb-1">
+              <p>
+                10. On a scale of 1-10 how satisfied are you with your life?
+              </p>
+            </h5>
+            Response : {{q11}}
+          </li>
+          <br />
+
+          <li class="list-group-item">
+            <h5 class="mb-1">
+              <p>11. What can you do differently to make your life better?</p>
+            </h5>
+            Response : {{q12}}
+          </li>
+          <br />
+        </ol>
+      </div>
+
+      <hr class="my-4" />
+
+      <div class="container">
+        <br />
+        <h1 class="display-4">Recommendations and Suggestions</h1>
+        <ol class="list-group" type="1">
+          <li class="list-group-item">
+            <h5 class="mb-1">Journal it all out</h5>
+            Keep a notebook or journal where you can record your situations, how
+            to respond to it, how can you improve and organise your thoughts etc
+            And slowly you could get a grip of yourself and a relief from your
+            stress at the end.
+            <div class="mt-1">
+              <button type="button" class="btn btn-outline-success active">
+                Evernote
+              </button>
+            </div>
+          </li>
+          <br />
+          <li class="list-group-item">
+            <h5 class="mb-1">Slow down and relax</h5>
+            Being calm and having a clear mind is very important. This will give
+            you time to think and act properly. One easy way to do this is to
+            take a shower or bath which cleanses you physically as well as
+            mentally Also remember to hydrate yourself and drink lots of water.
+            Meditation is another way to relax yourself and create a clam mind
+            to think.
+            <div class="mt-1">
+              <a href="https://www.calm.com/"
+                ><button type="button" class="btn btn-outline-success active">
+                  Calm
+                </button></a
+              >
+            </div>
+          </li>
+          <br />
+          <li class="list-group-item">
+            <h5 class="mb-1">Talk to someone and let it all out</h5>
+            Sometimes you need an outsider's perspective to see your situation
+            clearly, so talking to a trusted friend or therapist would help you
+            relieve stress or anxiety.
+            <div class="mt-1">
+              <a href="https://www.onlinecounselling4u.com/"
+                ><button type="button" class="btn btn-outline-success active">
+                  Talk to an expert
+                </button></a
+              >
+            </div>
+          </li>
+          <br />
+          <li class="list-group-item">
+            <h5 class="mb-1">Self Care</h5>
+            At the end of the day your health wealth and well is what it all
+            matters. Make sure you eat healthy, drink healthy because your body
+            needs to function non stop so it requires the most care. A common
+            problem faced during stress is lack of sleep or unbalanced sleep
+            schedule which has to be changed and you must make sure you sleep at
+            least 8 hours a day It says that any action that you continuously do
+            for 21 days turn out to be a habit so set yourself a proper routine
+            and work your best to maintain.
+            <div class="mt-1">
+              <a href="https://motivation.app/"
+                ><button type="button" class="btn btn-outline-success active">
+                  Get a jumpstart
+                </button></a
+              >
+            </div>
+          </li>
+          <br />
+          <li class="list-group-item">
+            <h5 class="mb-1">Stay active (physically and mentally)</h5>
+            Stress is an inevitable factor; the real question is how you deals
+            with it. The main phase where you surrender yourself to stress and
+            anxiety is when you overthink especially about future which is
+            uncertain. So, when you are starting to feel stressed instead of
+            staying in bed try to free you mind by actively involving in
+            activities Workouts are a great option that helps you in many ways
+            Try out simple stretches and movements that do help your entire
+            body.Involve in activities that you like travelling, dancing, art
+            etc
+            <div class="mt-1">
+              <a href="https://www.headspace.com/"
+                ><button type="button" class="btn btn-outline-success active">
+                  Get some headspace
+                </button></a
+              >
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>
